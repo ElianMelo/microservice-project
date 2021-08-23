@@ -1,4 +1,4 @@
-package com.iftm.ms;
+package com.iftm.ms.hrworker;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
