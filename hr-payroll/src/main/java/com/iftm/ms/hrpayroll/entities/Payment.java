@@ -1,4 +1,4 @@
-package com.iftm.ms.hrworker.entities;
+package com.iftm.ms.hrpayroll.entities;
 
 import java.io.Serializable;
 
