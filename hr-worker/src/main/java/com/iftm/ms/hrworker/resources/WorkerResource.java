@@ -18,7 +18,7 @@ import com.iftm.ms.hrworker.services.WorkerService;
 @RestController
 @RequestMapping(value = "/workers")
 public class WorkerResource {
-	
+
 	private static Logger logger = LoggerFactory.getLogger(WorkerResource.class);
 	
 	@Autowired
@@ -33,10 +33,12 @@ public class WorkerResource {
 		return ResponseEntity.ok(list);
 	}
 	
-	@GetMapping("/{id}")
+	@GetMapping(value = "/{id}")
 	public ResponseEntity<Worker> findById(@PathVariable Long id) {
+		
 		logger.info("PORT = " + env.getProperty("local.server.port"));
-		Worker obj = service.findById(id);
+		
+		Worker obj = service.findyId(id);
 		return ResponseEntity.ok(obj);
 	}
 }
