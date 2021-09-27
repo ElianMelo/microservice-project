@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Payment implements Serializable {
+public class Payment implements Serializable{
 	private static final long serialVersionUID = 1L;
-	
+
 	private String name;
 	private Double dailyIncome;
 	private Integer days;
