@@ -16,13 +16,12 @@ public class WorkerService {
 	
 	public List<Worker> findAll() {
 		List<Worker> list = repository.findAll();
-		
 		return list;
 	}
 	
-	public Worker findyId(Long id) {
+	public Worker findById(Long id) {
 		Worker entity = repository.findById(id).get();
-		
 		return entity;
 	}
+
 }

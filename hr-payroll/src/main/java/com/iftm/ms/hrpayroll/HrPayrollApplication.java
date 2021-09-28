@@ -7,9 +7,9 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @EnableCircuitBreaker
+@EnableEurekaClient
 @EnableFeignClients
 @SpringBootApplication
-@EnableEurekaClient
 public class HrPayrollApplication {
 
 	public static void main(String[] args) {
