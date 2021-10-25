@@ -18,7 +18,7 @@ import com.iftm.ms.hrworker.services.WorkerService;
 @RestController
 @RequestMapping(value = "/workers")
 public class WorkerResource {
-	
+
 	private static Logger logger = LoggerFactory.getLogger(WorkerResource.class);
 	
 	@Autowired
@@ -34,13 +34,11 @@ public class WorkerResource {
 	}
 	
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<Worker> findById(@PathVariable Long id) {		
-		/*
-		int i = 1;
-		if (i == 1)
-			throw new RuntimeException("test");
-			
-		*/	
+	public ResponseEntity<Worker> findById(@PathVariable Long id) {
+		
+//		int i =1;
+//		if(i == 1)
+//		throw new RuntimeException("test");
 		
 		try {
 			Thread.sleep(4500L);
@@ -48,10 +46,9 @@ public class WorkerResource {
 			e.printStackTrace();
 		}
 		
-		
 		logger.info("PORT = " + env.getProperty("local.server.port"));
 		
-		Worker obj = service.findById(id);
+		Worker obj = service.findyId(id);
 		return ResponseEntity.ok(obj);
 	}
 }

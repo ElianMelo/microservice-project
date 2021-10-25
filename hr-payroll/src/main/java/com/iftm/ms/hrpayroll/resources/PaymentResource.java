@@ -14,7 +14,7 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 @RestController
 @RequestMapping(value = "/payments")
 public class PaymentResource {
-	
+
 	@Autowired
 	private PaymentService service;
 	
